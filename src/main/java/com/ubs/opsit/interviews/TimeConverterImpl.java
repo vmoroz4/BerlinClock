@@ -6,6 +6,6 @@ package com.ubs.opsit.interviews;
 public class TimeConverterImpl implements TimeConverter{
     @Override
     public String convertTime(String aTime) {
-        return "__________WRONG_VALUE_________";
+        return new BerlinClock(aTime).toString();
     }
 }

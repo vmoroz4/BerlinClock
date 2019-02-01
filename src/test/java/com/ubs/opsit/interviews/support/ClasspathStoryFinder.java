@@ -25,7 +25,7 @@ public final class ClasspathStoryFinder {
     public static List<String> findFilenamesThatMatch(String aFilenameWithWildcards) {
         List<String> filenames = new ArrayList<String>();
         for (File file : findFilesThatMatch(aFilenameWithWildcards)) {
-            filenames.add(file.toString());
+            filenames.add(file.toURI().toString());
         }
         return filenames;
     }

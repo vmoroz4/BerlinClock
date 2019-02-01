@@ -13,9 +13,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 public class BerlinClockFixture {
 
-    //TODO Added new TimeConverterImpl().
-    // Not sure if it is available operation. Otherwise Reflection(?) should be used or something similar to Spring Bean Factory (?)
-    private TimeConverter berlinClock = new TimeConverterImpl(); //
+    private TimeConverter berlinClock = new TimeConverterImpl();
     private String theTime;
 
     @Test
